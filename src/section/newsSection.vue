@@ -1,0 +1,19 @@
+<script setup>
+import SectionText from "../components/sectionText.vue";
+import Buttons from "../components/buttons.vue";
+import CardNews from "../components/cardNews.vue";;
+</script>
+<template>
+ <section class="py-20">
+    <div class="container flex flex-col justify-center h-full">
+      <SectionText mainTitle="news"/>
+      <ul class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mb-6">
+        <CardNews :limit="3"/>
+      </ul>
+      <div class="text-center mb-6">
+        <span class="me-2">Browse specially curated products</span
+        ><Buttons text=" view more" :class="['btn-text']" :showIcon="true" :href="['/news']"/>
+      </div>
+    </div>
+  </section>
+</template>

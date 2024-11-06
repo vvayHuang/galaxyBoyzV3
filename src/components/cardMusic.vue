@@ -1,0 +1,48 @@
+<script setup>
+import { RouterLink, RouterView } from "vue-router";
+import { defineProps } from "vue";
+import releaseData from "../data/release";
+
+const { releases, category } = releaseData;
+const props = defineProps({
+  limit: {
+    type: Number,
+    default: null, // 預設顯示所有資料
+  },
+  music: {
+    type: Object,
+    required: true,
+  },
+});
+
+// 使用 limit prop 限制顯示的項目
+const displayedRelease = props.limit ? releases.slice(0, props.limit) : releases;
+</script>
+<template>
+  <li
+    v-for="releases in displayedRelease"
+    :key="releases.id"
+    class="group relative"
+  >
+    <div
+      class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80 rounded-t"
+    >
+      <img
+        :src="releases.imageSrc"
+        :alt="releases.imageAlt"
+        class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+      />
+    </div>
+    <div class="flex justify-between p-3 bg-surface rounded-b">
+      <div class="p-3">
+        <h3 class="text-title-1 font-body font-bold">
+          <RouterLink :to="releases.to">
+            <span aria-hidden="true" class="absolute inset-0" />
+            {{ releases.name }}
+          </RouterLink>
+        </h3>
+      </div>
+    </div>
+  </li>
+  <router-view></router-view>
+</template>

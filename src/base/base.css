@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+@layer base {
+  :root {
+    font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", system-ui,
+      -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif,
+      "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgb(var(--color-on-background));
+    background-color: rgb(var(--color-background));
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --color-primary: 229, 110, 49;
+    --color-on-primary: 255, 255, 255;
+    --color-primary-container: 255, 219, 204;
+    --color-on-primary-container: 53, 16, 0;
+    --color-inverse-primary: 255, 182, 149;
+
+    --color-secondary: 84, 115, 201;
+    --color-on-secondary: 255, 255, 255;
+    --color-secondary-container: 255, 219, 204;
+    --color-on-secondary-container: 53, 16, 0;
+
+    --color-background: 255, 255, 255;
+    --color-on-background: 34, 26, 22;
+
+    --color-surface: 255, 248, 246;
+    --color-on-surface: 34, 26, 22;
+    --color-surface-variant: 244, 222, 212;
+    --color-on-surface-variant: 82, 68, 60, 1;
+
+    --color-outline: 133, 116, 107;
+    --color-outline-variant: 215, 194, 184;
+
+    --color-inverse-surface: 43, 36, 34;
+    --color-on-inverse-surface: 255, 251, 255;
+
+    --color-primary-opacity-012: 142, 77, 46, 0.12;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "New Amsterdam";
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: rgb(var(--color-on-background));
+      background-color: rgb(var(--color-background));
+
+      --color-primary: 255, 182, 149;
+      --color-on-primary: 84, 33, 5;
+      --color-primary-container: 113, 54, 25;
+      --color-on-primary-container: 255, 219, 204;
+      --color-inverse-primary: 142, 77, 46;
+
+      --color-secondary: 179, 197, 255;
+      --color-on-secondary: 25, 46, 96;
+      --color-secondary-container: 49, 69, 120;
+      --color-on-secondary-container: 219, 225, 255;
+
+      --color-background: 26, 18, 14;
+      --color-on-background: 241, 223, 216;
+
+      --color-surface: 26, 18, 14;
+      --color-on-surface: 241, 223, 216;
+      --color-surface-variant: 82, 68, 60;
+      --color-on-surface-variant: 215, 194, 184;
+
+      --color-outline: 159, 141, 132;
+      --color-outline-variant: 82, 68, 60;
+
+      --color-inverse-surface: 241, 223, 216;
+      --color-on-inverse-surface: 56, 46, 42;
+    }
+  }
+}
