@@ -38,7 +38,7 @@ const displayedShop = props.limit ? shops.slice(0, props.limit) : shops;
         {{ shops.name }}
       </h3>
     </div>
-    <RouterLink :to="shops.to">
+    <RouterLink :to="shops.href">
       <span aria-hidden="true" class="absolute inset-0" />
     </RouterLink>
   </li>

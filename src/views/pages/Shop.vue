@@ -35,7 +35,7 @@ const { shops, category } = shopData;
                     </h3>
                   </div>
                   <div class="p-8 flex justify-between">
-                    <a :href="shop.href">view product</a>
+                    <RouterLink :to="shop.href">view product</RouterLink>
                     <div class="flex">
                       <p class="me-2">{{ shop.price }}</p>
                       <span class="text-body-3">NTD</span>

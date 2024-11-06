@@ -36,7 +36,7 @@ const displayedRelease = props.limit ? releases.slice(0, props.limit) : releases
     <div class="flex justify-between p-3 bg-surface rounded-b">
       <div class="p-3">
         <h3 class="text-title-1 font-body font-bold">
-          <RouterLink :to="release.to">
+          <RouterLink :to="release.href">
             <span aria-hidden="true" class="absolute inset-0" />
             {{ release.name }}
           </RouterLink>
