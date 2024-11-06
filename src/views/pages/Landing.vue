@@ -20,12 +20,6 @@ import SubscribeSection from "@/section/subscribeSection.vue";
   <SubscribeSection />
 </template>
 <style scoped>
-.hero {
-  background-image: url("../../assets/images/landing/background-image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 ::v-deep .galaxyboyz{
   @apply text-surface-on-inverse dark:text-surface-on
 }

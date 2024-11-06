@@ -9,7 +9,7 @@ import infos from "@/data/info";
     <div class="container">
       <div class="flex md:flex-row flex-col gap-6">
         <div class="basis-9/12">
-            <div class="  mb-4"><img class=" rounded-t w-full h-full object-cover" src="../../assets/images/info/info-1.png" alt="group-pic"></div>
+            <div class="  mb-4"><img class=" rounded-t w-full h-full object-cover" src="/assets/images/info/info-1.png" alt="group-pic"></div>
           <div class=" lg:p-8 rounded-b">
             In the vast expanse of the music universe, where genres collide like
             stars in a cosmic dance, emerges a group that dares to explore the

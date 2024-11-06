@@ -13,12 +13,12 @@ const selectedShop = shops.sort(() => Math.random() - 0.5).slice(0, 4);
           <div class="bg-surface lg:p-8 p-2">
             <img
               class="w-full object-cover mb-6"
-              src="../../assets/images/shop/shop-1.png"
+              src="/assets/images/shop/shop-1.png"
               alt=""
             />
             <img
               class="w-full object-cover mb-6"
-              src="../../assets/images/shop/shop-back-1.png"
+              src="/assets/images/shop/shop-back-1.png"
               alt=""
             />
           </div>

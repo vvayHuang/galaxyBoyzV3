@@ -13,7 +13,7 @@ import listItemShow from "../components/listItemShow.vue";
       </ul>
       <div class="text-center text-surface-on-inverse dark:text-surface-on">
         <span class="me-2">Browse specially curated shows</span
-        ><Buttons text="view more" :class="['btn-text']" :showIcon="true" :href="['/shows']"/>
+        ><RouterLink to="/shows"><Buttons text="view more" :class="['btn-text']" :showIcon="true"/></RouterLink>
       </div>
     </div>
   </section>

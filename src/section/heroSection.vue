@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink, RouterView } from "vue-router";
 import Buttons from '../components/buttons.vue';
 </script>
 
@@ -13,7 +14,7 @@ import Buttons from '../components/buttons.vue';
         <div class="w-full justify-between items-center flex">
           <img
             class="grow shrink basis-0 self-stretch object-cover"
-            src="../assets/images/release/day-of-our-lives.png"
+            src="/assets/images/release/day-of-our-lives.png"
             alt="cd-cover"
           />
         </div>
@@ -25,16 +26,25 @@ import Buttons from '../components/buttons.vue';
           The Brand New Album<br />Out Now
         </h2>
         <div class="justify-start items-start gap-6 inline-flex">
-          <Buttons text="pre-oder" :class="['btn-primary-outline']" :href="['/release/music']"/>
-          <Buttons text="pre-save" :class="['btn-primary-outline']"/>
-          <Buttons text="other retailers" :class="['btn-primary-outline']"/>
+          <RouterLink to="/release/music"><Buttons text="pre-oder" :class="['btn-primary-outline']"/></RouterLink>
+          <RouterLink><Buttons text="pre-save" :class="['btn-primary-outline']"/></RouterLink>
+          <RouterLink><Buttons text="other retailers" :class="['btn-primary-outline']"/></RouterLink>
         </div>
       </div>
     </div>
     <div
       class="flex-col justify-start items-start gap-2 md:flex hidden container"
     >
-      <img src="../assets/images/landing/Days of our lives.png" alt="" />
+      <img src="/assets/images/landing/Days of our lives.png" alt="" />
     </div>
   </section>
+  <RouterView/>
 </template>
+<style scoped>
+.hero {
+  background-image: url("/assets/images/landing/background-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>

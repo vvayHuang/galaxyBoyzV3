@@ -11,7 +11,7 @@ import CardNews from "@/components/cardNews.vue";
         <div class="rounded overflow-hidden">
           <img
             class="object-cover h-[303.5px] md:h-full w-full"
-            src="@/assets/images/news/news-1.png"
+            src="/assets/images/news/news-1.png"
             alt=""
           />
         </div>

@@ -4,7 +4,10 @@ import { fileURLToPath, URL } from 'node:url';
 import liveReload from "vite-plugin-live-reload";
 
 export default defineConfig({
-  // base: '/repository',
+  base: '/galaxyBoyzV3',
+  build: {
+    outDir: 'dist', // 設置構建目錄為 dist
+  },
   plugins: [
     vue(),
     liveReload(['./src/**/*.html']), // 修改為包含所有 HTML 文件

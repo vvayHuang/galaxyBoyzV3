@@ -7,24 +7,27 @@ import SectionText from "../components/sectionText.vue";
 
 <template>
   <section class="bg-[#E56E31] py-20 flex flex-col">
-    <Carousel class=" hidden lg:block"/>
+    <Carousel class="hidden lg:block" />
     <div class="container flex flex-col justify-center order-1 md:order-2">
       <SectionText
         mainTitle="merch"
         :main-title-style="['text-surface-on-inverse']"
       />
       <div class="text-center text-surface-on mb-6">
-        <span class="me-2 text-surface-on-inverse">Browse specially curated products</span>
-        <Buttons
-          text="view more"
-          :class="['btn-text','text-surface-on-inverse']"
-          :href="['/shop']"
-          :showIcon="true"
-        />
+        <span class="me-2 text-surface-on-inverse"
+          >Browse specially curated products</span
+        >
+        <RouterLink to="/shop">
+          <Buttons
+            text="view more"
+            :class="['btn-text', 'text-surface-on-inverse']"
+            :showIcon="true"
+          />
+        </RouterLink>
       </div>
-      <ul class=" grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 lg:hidden">
-         <CardMerch :limit="4"/>
-        </ul>
+      <ul class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 lg:hidden">
+        <CardMerch :limit="4" />
+      </ul>
     </div>
   </section>
 </template>

@@ -20,25 +20,25 @@ const displayedRelease = props.limit ? releases.slice(0, props.limit) : releases
 </script>
 <template>
   <li
-    v-for="releases in displayedRelease"
-    :key="releases.id"
+    v-for="release in displayedRelease"
+    :key="release.id"
     class="group relative"
   >
     <div
       class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80 rounded-t"
     >
       <img
-        :src="releases.imageSrc"
-        :alt="releases.imageAlt"
+        :src="release.imageSrc"
+        :alt="release.imageAlt"
         class="h-full w-full object-cover object-center lg:h-full lg:w-full"
       />
     </div>
     <div class="flex justify-between p-3 bg-surface rounded-b">
       <div class="p-3">
         <h3 class="text-title-1 font-body font-bold">
-          <RouterLink :to="releases.to">
+          <RouterLink :to="release.to">
             <span aria-hidden="true" class="absolute inset-0" />
-            {{ releases.name }}
+            {{ release.name }}
           </RouterLink>
         </h3>
       </div>

@@ -10,13 +10,13 @@ import SectionText from '../components/sectionText.vue';
     <div class="container">
      <SectionText mainTitle="music" :main-title-style="['text-surface-on-inverse','dark:text-surface-on']"/>
       <div class="text-center text-surface-on-inverse dark:text-surface-on mb-6">
-        <Buttons text="view more" :class="['btn-text']" :showIcon="true" :href="['/release']"/>
+        <RouterLink to="/release"><Buttons text="view more" :class="['btn-text']" :showIcon="true"/></RouterLink>
       </div>
       <div class="justify-center items-center flex">
         <RouterLink to="/release/music" class=" hidden lg:flex">
           <img
             class="object-cover"
-            src="../assets/images/release/day-of-our-lives.png"
+            src="/assets/images/release/day-of-our-lives.png"
             alt="cd-cover"
           />
         </RouterLink>
