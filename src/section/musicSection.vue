@@ -16,7 +16,7 @@ import SectionText from '../components/sectionText.vue';
         <RouterLink to="/release/music" class=" hidden lg:flex">
           <img
             class="object-cover"
-            src="/assets/images/release/day-of-our-lives.png"
+            src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/release/day-of-our-lives.png?raw=true"
             alt="cd-cover"
           />
         </RouterLink>

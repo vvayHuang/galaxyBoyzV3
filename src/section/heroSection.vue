@@ -14,7 +14,7 @@ import Buttons from '../components/buttons.vue';
         <div class="w-full justify-between items-center flex">
           <img
             class="grow shrink basis-0 self-stretch object-cover"
-            src="../../public/images/release/day-of-our-lives.png"
+            src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/release/day-of-our-lives.png?raw=true"
             alt="cd-cover"
           />
         </div>
@@ -35,14 +35,14 @@ import Buttons from '../components/buttons.vue';
     <div
       class="flex-col justify-start items-start gap-2 md:flex hidden container"
     >
-      <img src="/assets/images/landing/Days of our lives.png" alt="" />
+      <img src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/landing/Days%20of%20our%20lives.png?raw=true" alt="" />
     </div>
   </section>
   <RouterView/>
 </template>
 <style scoped>
 .hero {
-  background-image: url("/assets/images/landing/background-image.png");
+  background-image: url("https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/landing/background-image.png?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

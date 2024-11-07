@@ -64,7 +64,7 @@ import CardMusic from "../../components/cardMusic.vue";
           <div class="bg-surface lg:p-8 p-2 flex flex-col gap-6">
             <img
               class="w-full object-cover"
-              src="/assets/images/shop/shop-1.png"
+              src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-1.png?raw=true"
               alt=""
             />
             <nav class="md:block hidden">
