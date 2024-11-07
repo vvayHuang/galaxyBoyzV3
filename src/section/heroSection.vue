@@ -14,7 +14,7 @@ import Buttons from '../components/buttons.vue';
         <div class="w-full justify-between items-center flex">
           <img
             class="grow shrink basis-0 self-stretch object-cover"
-            src="/assets/images/release/day-of-our-lives.png"
+            src="../../public/images/release/day-of-our-lives.png"
             alt="cd-cover"
           />
         </div>
