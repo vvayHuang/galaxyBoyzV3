@@ -8,7 +8,7 @@ import twitter from "../../components/icons/twitter.vue"
     <div class=" md:container">
       <img
         class="object-cover mb-6 h-[322px] md:h-full w-full"
-        src="/assets/images/news/news-1.png"
+        src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/news/news-1.png?raw=true"
         alt=""
       />
     </div>
@@ -67,7 +67,7 @@ import twitter from "../../components/icons/twitter.vue"
               anthemic rock ballads that inspire sing-alongs to high-octane
               tracks that induce headbanging and dancing.
             </p>
-            <img class="my-6" src="/assets/images/news/news-1.png" alt="" />
+            <img class="my-6" src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/news/news-1.png?raw=true" alt="" />
             <p>
               One of the hallmarks of GalaxyBoyz's music is its ability to
               transcend borders and cultures. With their "Stellar World Tour,"
