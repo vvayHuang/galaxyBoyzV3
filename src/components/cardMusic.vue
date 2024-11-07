@@ -25,7 +25,7 @@ const displayedRelease = props.limit ? releases.slice(0, props.limit) : releases
     class="group relative"
   >
     <div
-      class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80 rounded-t"
+      class="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none lg:h-80 rounded-t xl:h-[424px]"
     >
       <img
         :src="release.imageSrc"
