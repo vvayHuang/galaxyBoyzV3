@@ -6,7 +6,7 @@ import SectionText from "../components/sectionText.vue";
 </script>
 
 <template>
-  <section class="bg-[#E56E31] py-20 flex flex-col">
+  <section class="bg-[#E56E31] lg:h-[1117px] py-20 flex flex-col justify-center">
     <Carousel class="hidden lg:block" />
     <div class="container flex flex-col justify-center order-1 md:order-2">
       <SectionText

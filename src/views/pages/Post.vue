@@ -2,6 +2,7 @@
 import facebook from "../../components/icons/facebook.vue"
 import instagram from "../../components/icons/instagram.vue"
 import twitter from "../../components/icons/twitter.vue"
+import newsData from "../../data/news";
 </script>
 <template>
   <section class="md:py-8 pb-4">
@@ -110,28 +111,9 @@ import twitter from "../../components/icons/twitter.vue"
           <div class="md:p-8 p-4 bg-surface rounded">
             <nav class="mb-12">
               <ul class="flex flex-col gap-3">
-                <li class="pb-12 border-b">
-                  <a href="#" class="text-title-1 font-bold"
-                    >GalaxyBoyz Announces Cosmic Merch Line: Clothing and
-                    Collectibles for Fans</a
-                  >
-                </li>
-                <li class="pb-12 border-b">
-                  <a href="#" class="text-title-1 font-bold"
-                    >GalaxyBoyz Announces Cosmic Merch Line: Clothing and
-                    Collectibles for Fans</a
-                  >
-                </li>
-                <li class="pb-12 border-b">
-                  <a href="#" class="text-title-1 font-bold"
-                    >GalaxyBoyz Announces Cosmic Merch Line: Clothing and
-                    Collectibles for Fans</a
-                  >
-                </li>
-                <li class="pb-12 border-b">
-                  <a href="#" class="text-title-1 font-bold"
-                    >GalaxyBoyz Announces Cosmic Merch Line: Clothing and
-                    Collectibles for Fans</a
+                <li v-for="news in newsData.slice(1,5)" :key="news.id" class="pb-12 border-b">
+                  <RouterLink :to="news.href" class="text-title-1 font-bold"
+                    >{{ news.title}}</RouterLink
                   >
                 </li>
               </ul>

@@ -12,7 +12,7 @@ import listItemShow from "../components/listItemShow.vue";
         <listItemShow :limit="4" :textStyle="['text-surface-on-inverse','dark:text-surface-on']"/>
       </ul>
       <div class="text-center text-surface-on-inverse dark:text-surface-on">
-        <span class="me-2">Browse specially curated shows</span
+        <span class="me-2">Check out all shows</span
         ><RouterLink to="/shows"><Buttons text="view more" :class="['btn-text']" :showIcon="true"/></RouterLink>
       </div>
     </div>
