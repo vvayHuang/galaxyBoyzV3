@@ -1,5 +1,6 @@
 <script setup>
 import shopsData from '@/data/shop';
+import CardMerch from '../../components/cardMerch.vue';
 const { shops}=shopsData
 
 // 選取前資料
@@ -61,27 +62,7 @@ const selectedShop = shops.sort(() => Math.random() - 0.5).slice(0, 4);
       </div>
       <h3 class="text-display-3 mb-3">you may also like:</h3>
       <ul class="grid md:grid-cols-4 grid-cols-1 md:gap-6 gap-4">
-        <li v-for="shop in selectedShop" :key="shop.id">
-          <div class="rounded bg-surface overflow-hidden">
-            <img
-              class="w-full object-cover"
-              :src="shop.imageSrc"
-              :alt="shop.imageAlt"
-            />
-            <div class="p-8 border-b lg:h-[120px]">
-              <h3 class="text-title-1 font-body font-bold">
-                {{ shop.name }}
-              </h3>
-            </div>
-            <div class="p-8 flex justify-between">
-              <a :href="shop.href">view product</a>
-              <div class="flex">
-                <p class="me-2">{{ shop.price }}</p>
-                <span class="text-body-3">NTD</span>
-              </div>
-            </div>
-          </div>
-        </li>
+        <CardMerch :limit="4"/>
       </ul>
     </div>
   </section>

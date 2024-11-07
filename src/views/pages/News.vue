@@ -20,7 +20,7 @@ import CardNews from "@/components/cardNews.vue";
             :alt="news.imageAlt"
           />
         </div>
-        <div class="md:p-8 p-6">
+        <div class="lg:p-8 md:p-6 p-4">
           <h2 class="text-background-on text-display-2 md:mb-8 mb-6">
             GalaxyBoyz Launches Stellar World Tour
           </h2>
@@ -36,7 +36,7 @@ import CardNews from "@/components/cardNews.vue";
       </div>
     </div>
     <div class="px-4 lg:px-[52px] md:py-20 py-6">
-      <ul class="grid md:grid-cols-3 grid-cols-1 lg:gap-6 md:gap-4 mb-6">
+      <ul class="grid md:grid-cols-3 grid-cols-1 lg:gap-6 gap-4 mb-6">
         <CardNews :newsData="newsData.slice(1)"/>
       </ul>
     </div>

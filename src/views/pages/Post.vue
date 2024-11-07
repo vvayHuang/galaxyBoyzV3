@@ -68,7 +68,7 @@ import newsData from "../../data/news";
               anthemic rock ballads that inspire sing-alongs to high-octane
               tracks that induce headbanging and dancing.
             </p>
-            <img class="my-6" src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/news/news-1.png?raw=true" alt="" />
+            <img class="my-6" src="https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/post/post-1.png?raw=true" alt="" />
             <p>
               One of the hallmarks of GalaxyBoyz's music is its ability to
               transcend borders and cultures. With their "Stellar World Tour,"

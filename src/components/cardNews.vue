@@ -19,7 +19,7 @@ const displayedNews = props.limit ? props.newsData.slice(0, props.limit) : props
 <template>
   <li v-for="news in displayedNews" :key="news.id">
     <div class="rounded overflow-hidden flex flex-col h-full">
-      <div class="h-[393px]">
+      <div class="">
         <img
           class="w-full h-full object-cover"
           :src="news.imageSrc"

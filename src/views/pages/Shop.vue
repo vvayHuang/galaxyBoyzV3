@@ -23,13 +23,13 @@ const { shops, category } = shopData;
           <nav>
             <ul class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
               <li v-for="shop in shops" :key="shops.id">
-                <div class="rounded bg-surface overflow-hidden">
+                <div class="rounded bg-surface overflow-hidden flex flex-col h-full">
                   <img
                     class="w-full object-cover"
                     :src="shop.imageSrc"
                     :alt="shop.imageAlt"
                   />
-                  <div class="p-8 border-b">
+                  <div class="p-8 border-b h-full">
                     <h3 class="text-title-1 font-body font-bold">
                       {{ shop.name }}
                     </h3>

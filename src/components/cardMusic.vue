@@ -33,15 +33,13 @@ const displayedRelease = props.limit ? releases.slice(0, props.limit) : releases
         class="h-full w-full object-cover object-center lg:h-full lg:w-full"
       />
     </div>
-    <div class="flex justify-between p-3 bg-surface rounded-b">
-      <div class="p-3">
-        <h3 class="text-title-1 font-body font-bold">
-          <RouterLink :to="release.href">
-            <span aria-hidden="true" class="absolute inset-0" />
-            {{ release.name }}
-          </RouterLink>
-        </h3>
-      </div>
+    <div class="flex justify-between p-6 bg-surface rounded-b">
+      <h3 class="xl:text-title-1 font-body font-bold">
+        <RouterLink :to="release.href">
+          <span aria-hidden="true" class="absolute inset-0" />
+          {{ release.name }}
+        </RouterLink>
+      </h3>
     </div>
   </li>
   <router-view></router-view>
