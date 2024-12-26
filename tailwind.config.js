@@ -20,7 +20,7 @@ export default {
       xl: "1320px",
     },
     fontFamily:{
-      'body':"SF Pro Text",
+      'body':"SF Pro ,system-ui, -apple-system",
     },
     fontSize: {
       "display-1": [
