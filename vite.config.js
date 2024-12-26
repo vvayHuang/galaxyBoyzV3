@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { fileURLToPath, URL } from 'node:url';
-import liveReload from "vite-plugin-live-reload";
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   base: '/galaxyBoyzV3',
@@ -10,7 +10,8 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    liveReload(['./src/**/*.html']), // 修改為包含所有 HTML 文件
+
+    vueDevTools(), // 啟用 Vue Devtools
   ],
   resolve: {
     alias: {

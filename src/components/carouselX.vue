@@ -36,9 +36,9 @@ onMounted(() => {
     <ul class="boxes">
       <li v-for="shop in shops" :key="shops.id">
         <div class="box">
-          <a :href="shop.href"
-            ><img class=" w-full h-full object-cover" :src="shop.imageSrc" :alt="shop.imageAlt"
-          /></a>
+        <router-link :to="shop.href"><img class=" w-full h-full object-cover" :src="shop.imageSrc" :alt="shop.imageAlt"
+          /></router-link>
+          
         </div>
       </li>
     </ul>

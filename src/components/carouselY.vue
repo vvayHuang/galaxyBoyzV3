@@ -30,9 +30,8 @@ onMounted(() => {
     <ul class="boxes">
       <li v-for="release in releases" :key="release.id">
         <div class="musicBox">
-          <a :href="release.href"
-            ><img class=" w-full h-full object-cover" :src="release.imageSrc" :alt="release.imageAlt"
-          /></a>
+          <router-link :to="release.href"><img class=" w-full h-full object-cover" :src="release.imageSrc" :alt="release.imageAlt"
+            /></router-link>
         </div>
       </li>
     </ul>

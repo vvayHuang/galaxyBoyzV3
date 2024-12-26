@@ -26,6 +26,7 @@ import SectionText from '../components/sectionText.vue';
         </ul>
       </div>
     </div>
+    
     <div class=" absolute h-full top-0 hidden lg:block"><CarouselY/></div>
     <div class=" absolute h-full top-0 end-0 hidden lg:block"><CarouselY/></div>
   </section>
