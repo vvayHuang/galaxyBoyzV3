@@ -2,7 +2,7 @@ const shops = [
   {
     id: 1,
     name: "Day Of Ours Lives CD",
-    href: "/shop/product",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-1.png?raw=true",
     imageAlt: "Day Of Ours Lives CD",
     price: "500",
@@ -10,7 +10,7 @@ const shops = [
   {
     id: 2,
     name: "Day Of Our Lives T-shirt",
-    href: "#",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-2.png?raw=true",
     imageAlt: "Day Of Our Lives T-shirt",
     price: "700",
@@ -18,7 +18,7 @@ const shops = [
   {
     id: 3,
     name: "Day Of Our Lives Towel",
-    href: "#",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-3.png?raw=true",
     imageAlt: "Day Of Our Lives Towel",
     price: "600",
@@ -26,7 +26,7 @@ const shops = [
   {
     id: 4,
     name: "Interstellar Anthem T-shirt",
-    href: "#",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-4.png?raw=true",
     imageAlt: "Interstellar Anthem T-shirt",
     price: "700",
@@ -34,7 +34,7 @@ const shops = [
   {
     id: 5,
     name: "Interstellar Anthem CD",
-    href: "#",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-5.png?raw=true",
     imageAlt: "Interstellar Anthem CD",
     price: "900",
@@ -42,7 +42,7 @@ const shops = [
   {
     id: 6,
     name: "Urban Groove Odyssey T-shirt",
-    href: "#",
+    href: "/galaxyBoyzV3/shop/product",
     imageSrc: "https://github.com/vvayHuang/galaxyBoyzV3/blob/main/public/images/shop/shop-6.png?raw=true",
     imageAlt: "Urban Groove Odyssey T-shirt",
     price: "600",
