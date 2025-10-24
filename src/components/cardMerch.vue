@@ -1,9 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import { defineProps } from "vue";
-import shopData from "../data/shop";
+import shopData from "@/data/shop";
 
-const { shops, category } = shopData;
+const { shops } = shopData;
 const props = defineProps({
   limit: {
     type: Number,

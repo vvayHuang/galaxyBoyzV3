@@ -1,5 +1,5 @@
 <script setup>
-import ArrowForward from "./icons/arrowForward.vue";
+import ArrowForward from "./icons/ArrowForward.vue";
 
 const { text, href, buttonStyle } = defineProps({
   text: String,

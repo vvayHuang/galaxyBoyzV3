@@ -70,6 +70,7 @@ const router = createRouter({
     };
   },
 });
+// 網頁頁籤上面會顯示官方名及當下的頁面名稱
 router.beforeEach((to) => {
   document.title = to.meta.title !== undefined ? `${to.meta.title} - GalaxyBoyz` : `GalaxyBoyz official`;
 });
